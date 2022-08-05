@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello HEXO, 海藻">
-    <meta name="description" content="">
+    <meta name="keywords" content="抽象代数简略, 海藻">
+    <meta name="description" content="对代数作了简要的概论，还在更新中。。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello HEXO | 海藻</title>
+    <title>抽象代数简略 | 海藻</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -38,9 +38,7 @@
 
 
 
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
     <link rel="stylesheet" href="/css/post.css">
-
 
 
 
@@ -405,12 +403,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/themes/matery/source/medias/featureimages/25.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello HEXO</h1>
+                    <h1 class="description center-align post-title">抽象代数简略</h1>
                 </div>
             </div>
         </div>
@@ -420,24 +418,39 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/VSCode/">
+                                <span class="chip bg-color">VSCode</span>
+                            </a>
+                        
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Markdown/" class="post-category">
+                                Markdown
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -446,7 +459,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-04
+                    2022-08-05
                 </div>
                 
 
@@ -455,14 +468,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    892
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -485,7 +498,48 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="抽象代数"><a href="#抽象代数" class="headerlink" title="抽象代数"></a>抽象代数</h1><blockquote>
+<p>希望自己能学到更深奥的地步</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本简略参考教材：《抽象代数》姚慕生</p>
+</blockquote>
+<h3 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h3><ul>
+<li>集合 交并补<br>$\mathcal{Z N Q R C }$ <blockquote>
+<p>定义了一个“-”运算 ，$\mathbf{B}$为$\mathbf{A}$的子集 $\mathbf{A-B}$称作$\mathbf{B}$在$\mathbf{A}$中的余集或补集.<br><br>德摩根公式<br><br>指标集 对于$\mathbf{F}$这一族集合，设有一个指标集$\mathbf{I}$，每个其内的集合下标$\alpha$$\in$$\mathbf{I}$,且是一一对应的，就称为指标集</p>
+</blockquote>
+</li>
+<li>映射<blockquote>
+<p>$\mathcal{f}$：$\mathbf{A}$$\rightarrow$$\mathbf{B}$，若a$\in$$\mathbf{A}$，则称$\mathcal{f}$（a）为a在$\mathcal{f}$下的像。令Im$\mathcal{f}$为$\mathbf{A}$在$\mathbf{f}$下的像</p>
+</blockquote>
+</li>
+<li>满射，单射，双射，二元运算，笛卡尔积</li>
+<li>偏序关系 Zorn引理</li>
+</ul>
+<h2 id="群论"><a href="#群论" class="headerlink" title="群论"></a>群论</h2><p>-群</p>
+<blockquote>
+<p>半群：对于一个运算下的一个集，满足结合律与封闭性<br>幺元：就是单位元，有幺元的半群称作幺半群，一个半群如果有幺元也有逆元就变成了群，一个群满足交换律就是交换群或Abel群<br><br>子群：记$\mathcal{H}$为群$\mathcal{G}$的非空子集两个条件满足其一就是子群：（1）.$\forall$$\mathcal{a，b}$$\in$$\mathcal{H}$，$\mathcal{ab}$$\in$$\mathcal{H}$且$a^{-1}$$\in$$\mathcal{H}$（2）.$\forall$$\mathcal{a，b}$$\in$$\mathcal{H}$，$\mathcal{a}$$a^{-1}$$\in$$\mathcal{H}$<br><br>陪集（伴集，傍集）：H是G的子群，a$\in$G,Ha={ha|h$\in$H}（我真的懒得复制代码了，就这样吧）这个H可以用来构造G的分划，称Ha为G的一个右伴集，同理可定义aH为G的一个左伴集。<br><br>两个右伴集相等的充要条件，若Ha=Hb $\rightarrow$ a=ea$\in$Ha $\rightarrow$ a=hb $\rightarrow$ a$b^{-1}$$\in$H，所以ha=ha（$b^{-1}$b）=（ha$b^{-1}$）b$\in$Hb,所以Ha是Hb的子集，反过来也可以证，所以Ha=Hb<br><br>基于此的，我们得到了Ha=Hb的充要条件为a$b^{-1}$$\in$H，<br>不相等时Ha和Hb的交集为空集，|Ha|=|Hb|，基于以上，我们说明了右伴集全体或左伴集全体构成了G 的一个分划<br><br>Lagrange定理<br><br>设H是有限群G的子群，则|H|是|G|的因子<br><br>Euler定理，Fermat小定理<br><br>正规子群，对于H为群G的子群，对于任意的a属于G，Ha=aH总成立，称H是G的正规子群。gh$g^{-1}$属于H推出H是G 的正规子群。中心必是正规子群<br><br>任意有限群都同构于某个置换群</p>
+</blockquote>
+<h2 id="环论"><a href="#环论" class="headerlink" title="环论"></a>环论</h2><blockquote>
+<p>环中有有两种运算 加法与乘法，加法是个群，乘法是个半群</p>
+</blockquote>
+<ul>
+<li>交换环，乘法可交换，就是交换环</li>
+<li>无零因子的环叫做整环</li>
+<li>除环<blockquote>
+<p>设R是一个环，R^=R\0,若R^有每一元素有逆元，则称R是一个除环。可交换的除环称为域，不可交换的除环称为斜域或体</p>
+</blockquote>
+</li>
+<li>子环<blockquote>
+<p>R是一个环，S是R的子集，若S在R的加法和乘法下仍为一个环则S称为R的一个子环。。。充要条件是S中的元素在减法和乘法中保持封闭</p>
+</blockquote>
+</li>
+<li>理想<blockquote>
+<p>设$I$是环$R$的一个子集，若$I$是（R，+）的一个加法子群且对于任意的r属于R及a属于I，总有ar属于I以及ra属于I，则称I是R的一个理想或双侧理想。（可以类比于群论中正规子群的定义）<br><br>任意一个环都至少有两个理想：一个是{0}一个是R自身，这二者被称为平凡理想（类比继续类比，群论和环论像是互通的）</p>
+</blockquote>
+</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -501,7 +555,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Huzzzz</a>
+                    <a href="/about" rel="external nofollow noreferrer">ZHhhh</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -511,7 +565,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://nnnn0907.github.io/2022/08/04/hello-hexo/">http://nnnn0907.github.io/2022/08/04/hello-hexo/</a>
+                    <a href="http://nnnn0907.github.io/2022/08/05/chou-xiang-dai-shu-jian-lue/">http://nnnn0907.github.io/2022/08/05/chou-xiang-dai-shu-jian-lue/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -524,7 +578,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Huzzzz</a>
+                    <a href="/about" target="_blank">ZHhhh</a>
                     !
                 </span>
             </div>
@@ -548,7 +602,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/VSCode/">
+                                    <span class="chip bg-color">VSCode</span>
+                                </a>
+                            
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -627,68 +689,28 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2022/08/04/hello-hexo/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Hello HEXO">
-                        
-                        <span class="card-title">Hello HEXO</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-04
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Huzzzz
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/09/07/hello-world/">
+                <a href="/2022/08/05/gao-deng-dai-shu/">
                     <div class="card-image">
                         
+                        <img src="/source/image/24.jpg" class="responsive-img" alt="高等代数">
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
-                        
-                        <span class="card-title">typora-vue-theme主题介绍</span>
+                        <span class="card-title">高等代数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是一个测试
+                            还在更新中。。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-05
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -704,8 +726,61 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/">
-                        <span class="chip bg-color">Typora</span>
+                    <a href="/tags/VSCode/">
+                        <span class="chip bg-color">VSCode</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/05/chou-xiang-dai-shu-jian-lue/">
+                    <div class="card-image">
+                        
+                        <img src="/themes/matery/source/medias/featureimages/25.jpg" class="responsive-img" alt="抽象代数简略">
+                        
+                        <span class="card-title">抽象代数简略</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对代数作了简要的概论，还在更新中。。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/VSCode/">
+                        <span class="chip bg-color">VSCode</span>
                     </a>
                     
                     <a href="/tags/Markdown/">
@@ -748,91 +823,17 @@
 
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
     
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 
@@ -902,7 +903,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">73</span>
+                        class="white-color">3k</span>
             
             
             

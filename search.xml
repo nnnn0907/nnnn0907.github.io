@@ -4,24 +4,11 @@
   
     
     <entry>
-      <title>Hello HEXO</title>
-      <link href="/2022/08/04/hello-hexo/"/>
-      <url>/2022/08/04/hello-hexo/</url>
+      <title>数学分析</title>
+      <link href="/2022/08/05/shu-xue-fen-xi/"/>
+      <url>/2022/08/05/shu-xue-fen-xi/</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>typora-vue-theme主题介绍</title>
-      <link href="/2021/09/07/hello-world/"/>
-      <url>/2021/09/07/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="数学分析"><a href="#数学分析" class="headerlink" title="数学分析"></a>数学分析</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul><li>参考教材</li></ul><h2 id="实数完备性"><a href="#实数完备性" class="headerlink" title="实数完备性"></a>实数完备性</h2><ul><li><p>确界原理</p><blockquote><p>设S为一个非空数集，S有界一定有上下确界。当然有上界一定有上确界，有下界一定有下确界</p></blockquote></li><li><p>单调有界定理</p><blockquote><p>一个数列，如果单调并且有界，一定有极限（另外的，如果一个数列有界，那他一定存在一个收敛的子列…这个被叫做致密性定理</p></blockquote></li><li><p>有限覆盖原理</p><blockquote><p>设H为闭区间[a,b]上的一个开覆盖，则从H中可选出有限个开区间来覆盖[a，b]</p></blockquote></li><li><p>bolazano weistress聚点定理</p><blockquote><p>实轴上的任一无限点集S至少有一个聚点</p></blockquote></li><li><p>区间套定理</p><blockquote><p>有唯一的一点处在闭区间套[an，bn]中</p></blockquote></li><li><p>柯西收敛原理</p><blockquote><p>这样的$a_{n}$叫做基本列，<br><br> | $a_{n}$-$a_{m}$|&lt;$\epsilon$<br><br>下面这个是级数收敛的充要条件不要弄混了~<br><br> | $a_{n+1}$ + $a_{n+2}$ + … + $a_{n+p}$ |&lt;$\epsilon$</p></blockquote></li><li><p>Dedekind分割</p><blockquote><p>有个下组$x^{2}$&lt;2且x&lt;0，上组与下组间存在一个空隙里面有一个点就叫做无理数鸟。</p></blockquote></li></ul><h2 id="一致连续"><a href="#一致连续" class="headerlink" title="一致连续"></a>一致连续</h2><blockquote><p>或许可以与一致收敛配合着来看<br><br>先说说一致连续，对于定义域内$x_{1}$ ， $x_{2}$，$\forall$$\epsilon$&gt;0,$\exists$$\delta$&gt;0,s.t|$x_{1}$ - $x_{2}$|&lt;$\delta$时，有|f（$x_{1}$）-f（$x_{2}$）|&lt;$\epsilon$<br><br>一致连续可推出连续，连续推不出一致连续<br><br>闭区间上连续可推出在此闭区间上一致连续<br><br>有界闭区间上的连续函数必在该区间上有界<br><br>个人认为：一致连续的本质规定应该是在函数的有界性这儿，和导数的有界性所关联性应该不大</p></blockquote><h2 id="一致收敛"><a href="#一致收敛" class="headerlink" title="一致收敛"></a>一致收敛</h2><blockquote><p>对于一个函数项级数$S_{n}（x）$<br><br> 先考虑一下逐点收敛 这是先规定了x,再让n取极限是的极限存在<br><br>再考虑一致收敛，$\exists$N,$\forall$n&gt;N,s.t函数项级数收敛到S（x）这是对于所有的x而言，强度较一致收敛更强了</p></blockquote><ul><li>这儿也是有Cauthy收敛原理的，真牛逼啊柯西</li><li>具体定义<blockquote><p>设函数列{${f_{n}}$}在点集$I$（可以是区间也可以不是区间）上收敛于$f$.如果对于任意给定的正数$\epsilon$,都存在与$x$无关的正整数$N$$(\epsilon)$,使得当$n$$\geqslant$$N$$(\epsilon)$时，不等式<br><br> | $f_{n}$$(x)$ - $f(x)$) |$\leq$$\epsilon$<br><br>对$I$中一切的$x$都成立，则称函数列{$f_{n}$}在$I$上一致收敛于函数$f$.</p></blockquote></li><li>一个充分必要条件<blockquote><p>$\lim_{n \to \infty}$$\beta_{n}$ = $\lim_{n \to \infty}$$\sup$ | $f_{n}(x)$ - $f(x)$ | = $0$</p></blockquote></li><li>定义<blockquote><p>设$\sum_{n = 1}^{\infty}u_{n}(x)$是定义在区间I上的一个函数项级数，令$S_{n}(x)$ $= \sum_{k = 1}^{n}u_{k}(x)$为他的部分和.如果函数列${S_{n}(x)}$在$I$上一致收敛于$S(x)$，则称级数$\sum_{n = 1}^{\infty}u_{n}(x)$在$I$上一致收敛于$S(x)$</p></blockquote></li><li>必要条件为他的通项一致收敛于0</li><li>$Weierstrass$判别法</li><li>一致有界(小于$M$)，逐点有界（小于$M(x)$ ）</li></ul><h2 id="级数中的一些"><a href="#级数中的一些" class="headerlink" title="级数中的一些"></a>级数中的一些</h2><ul><li>Abel分部求和公式<blockquote><p>设{$a_{n}$},{$b_{n}$}是两列实数，则对任意的正整数n，有<br><br>$\enspace$ $\sum_{k = 1}^{n}$$a_{k}$$b_{k}$ = $\sum_{k = 1}^{n-1}$$S_{k}$($b_{k}$ - $b_{k+1}$) + $S_{n}$$b_{n}$,<br><br>其中$S_{k}$ = $\sum_{l = 1}^{k}$$a_{l}$.<br><br>同分部积分公式相似</p></blockquote></li><li>Abel引理<blockquote><p>设$b_{n}$单调，记$S_{k}$ = $\sum_{l = 1}^{k}$$a_{l}$.若|$S_{k}$|$\leq$$M$.那么<br><br>|$\sum_{k = 1}^{n}$$a_{k}$$b_{k}$|$\leq$$M$（|$b_{1}$|+2|$b_{n}$|）</p></blockquote></li><li>$Dirichlet$判别法(收敛和一致收敛有着奇特的相似性)</li><li>$Abel$判别法(收敛和一致收敛有着奇特的相似性)</li><li>绝对收敛与条件收敛<blockquote><p>绝对收敛较为一般，交换次序不变和。（Riemann定理）条件收敛交换次序可以变成任意数</p></blockquote></li></ul><h2 id="浅谈积分"><a href="#浅谈积分" class="headerlink" title="浅谈积分"></a>浅谈积分</h2><blockquote><p>Rieman积分 Lebesgue积分（可测函数的积分）NL公式<br><br>可积一定有界<br><br>积分第一均值定理 积分第二均值定理<br><br>微积分基本定理<br><br>Darboux定理 ：上和，下和，上和的下确界叫做上积分，下和的上确界叫做下积分，分割长度趋于0的时候 上和等于上积分，下和等于下积分<br>个人感觉就是极限的另一种形式</p></blockquote><ul><li>有了一个三个条件的等价，可积；振幅的极限和为0；上积分等于下积分</li><li>f在有限闭区间上有界，那么f在其上Riemann可积的充分必要条件是不连续点是一个零测集</li></ul><h2 id="多元积分学"><a href="#多元积分学" class="headerlink" title="多元积分学"></a>多元积分学</h2><ul><li>内点<blockquote><p>一个小的邻域球在球内部，就是内点</p></blockquote></li><li>开集<blockquote><p>内点组成的集合与本身相等就是开集，$R^{n}$，$\varnothing$是空集，任意多个开集的并是开集，有限个开集的交是开集（这里可以参考闭区间套定理，让无限个的开集交起来就有可能是一个点了）</p></blockquote></li><li>闭集<blockquote><p>补集是开集的就是闭集</p></blockquote></li><li>凝聚点<blockquote><p>一个以$\mathcal{a}$为中心的空心球，若其内总存在E中的点，就称$\mathcal{a}$为凝聚点或极限点，注：凝聚点不一定属于E，在边缘就不是。不是凝聚点的点叫做孤立点<br><br>凝聚点的全体叫做导集记作$E^{‘}$，闭包是导集与原集合的并（写作E的共轭敲不出来算了），E是闭集的充分必要条件是导集是E的子集，也就是闭包和E相等。还有一个充分必要条件就是说E中任意收敛点列的极限必在E中</p></blockquote></li><li>如果E中的任一点列都有一子列收敛于E中的一点，则称E为$R^{n}$中的一个列紧集，实际上讲就是有界闭集</li><li>利用开覆盖来定义一个紧致集</li><li>连通集<blockquote><p>对于一个E进行一个AUB的分解，他俩相交等于空集，同时$A^{‘}$$\bigcap$$B^{}$$\neq$$\varnothing$且$A^{}$$\bigcap$$B^{‘}$$\neq$$\varnothing$，那就称E为一个连通集，或说E是连通的</p></blockquote></li><li>类似于一元的，这里也有相似的一致连续</li></ul>]]></content>
       
       
       <categories>
@@ -33,7 +20,88 @@
       
         <tags>
             
-            <tag> Typora </tag>
+            <tag> VSCode </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>极值组合暑期课程结课论文</title>
+      <link href="/2022/08/05/ji-zhi-zu-he-shu-qi-ke-cheng-jie-ke-lun-wen/"/>
+      <url>/2022/08/05/ji-zhi-zu-he-shu-qi-ke-cheng-jie-ke-lun-wen/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VSCode </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>高等代数</title>
+      <link href="/2022/08/05/gao-deng-dai-shu/"/>
+      <url>/2022/08/05/gao-deng-dai-shu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="高等代数"><a href="#高等代数" class="headerlink" title="高等代数"></a>高等代数</h1><blockquote><p>我向来不是很喜欢代数的。。。。但是就目前这个形势而言未来我还真有可能去做代数）</p></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul><li>参考教材<blockquote><p>《线性代数》李尚志，《高等代数》丘维声，《高等代数》北京大学前代数小组，《Linear Algebra Done Right》Axler, Sheldon Jay，《线性代数及其运用》</p></blockquote></li><li>这个教材数目就已经看出来我的理解有多么困难</li></ul><h2 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h2><blockquote><p>李尚志由于在矩阵和行列式之后才讲的，他娘的直接用矩阵开搞，这边看的是丘写的</p></blockquote><ul><li>先对环进行了一个粗略的说明</li></ul><h2 id="线性方程组"><a href="#线性方程组" class="headerlink" title="线性方程组"></a>线性方程组</h2><ul><li>主元<blockquote><p>对于一个线性方程组有解称它为相容的，无解称之为不相容的<br><br>可以抽象成一个mxn矩阵阵列,m本质来看是方程个数，n为未知数个数（+1）（增广矩阵也可能包含右边的常数）<br><br>行变换不影响解空间，但矩阵发生了变换，而且是可逆的，这在线性变换中有着进一步的说明<br><br>工业中的数值计算也是通过消去法求解的，但由于浮点数的不精确会产生误差<br><br>每个行列式等价于唯一的简化行阶梯型矩阵（RREF），行阶梯形（REF）<br><br>主元位置在每一列的非零列的第一个非零元素（从上往下）</p></blockquote></li><li>向量</li><li>张 Span</li><li>秩</li></ul><h2 id="英汉对照"><a href="#英汉对照" class="headerlink" title="英汉对照"></a>英汉对照</h2><ul><li>矩阵 matrix</li><li>行 row</li><li>列 column</li><li>线性变换 linear transformation</li><li>行等价 row equivalent</li><li>增广矩阵 argumented matrix</li><li>满射 onto（映上）surjective</li><li>单射 injection ，one to one <blockquote><p>a$\neq$b==&gt;$f(a)\neq f(b)$,离散中证明大多用的是逆否命题~</p></blockquote></li><li>双射 bijection</li><li>对称矩阵 symmetric matrix<blockquote><p>A’=A,|A|</p></blockquote></li><li>正交矩阵 orthogonal matrix orthogonal matrices<blockquote><p>A^(-1)=A’(也即是A’A=E),|A|=1/-1</p></blockquote></li><li>行列式 Determinant</li><li>秩 rank</li><li>可逆矩阵 invertible matrix</li><li>可对角化的 diagonalizable</li><li>特征向量 eigenvectors</li><li>特征值 eigenvalue</li><li>two distinct eigenvalues 两个不同的特征值</li><li>corresponding 相应的</li><li>线性无关 linear independent</li><li>线性相关 linear dependent</li><li>阶梯型矩阵 matrix in echelon form</li><li>简化阶梯型矩阵simplified step-formed matrices</li><li>二次型矩阵 quadratic form</li><li>标量scalars</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VSCode </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>抽象代数简略</title>
+      <link href="/2022/08/05/chou-xiang-dai-shu-jian-lue/"/>
+      <url>/2022/08/05/chou-xiang-dai-shu-jian-lue/</url>
+      
+        <content type="html"><![CDATA[<h1 id="抽象代数"><a href="#抽象代数" class="headerlink" title="抽象代数"></a>抽象代数</h1><blockquote><p>希望自己能学到更深奥的地步</p></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>本简略参考教材：《抽象代数》姚慕生</p></blockquote><h3 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h3><ul><li>集合 交并补<br>$\mathcal{Z N Q R C }$ <blockquote><p>定义了一个“-”运算 ，$\mathbf{B}$为$\mathbf{A}$的子集 $\mathbf{A-B}$称作$\mathbf{B}$在$\mathbf{A}$中的余集或补集.<br><br>德摩根公式<br><br>指标集 对于$\mathbf{F}$这一族集合，设有一个指标集$\mathbf{I}$，每个其内的集合下标$\alpha$$\in$$\mathbf{I}$,且是一一对应的，就称为指标集</p></blockquote></li><li>映射<blockquote><p>$\mathcal{f}$：$\mathbf{A}$$\rightarrow$$\mathbf{B}$，若a$\in$$\mathbf{A}$，则称$\mathcal{f}$（a）为a在$\mathcal{f}$下的像。令Im$\mathcal{f}$为$\mathbf{A}$在$\mathbf{f}$下的像</p></blockquote></li><li>满射，单射，双射，二元运算，笛卡尔积</li><li>偏序关系 Zorn引理</li></ul><h2 id="群论"><a href="#群论" class="headerlink" title="群论"></a>群论</h2><p>-群</p><blockquote><p>半群：对于一个运算下的一个集，满足结合律与封闭性<br>幺元：就是单位元，有幺元的半群称作幺半群，一个半群如果有幺元也有逆元就变成了群，一个群满足交换律就是交换群或Abel群<br><br>子群：记$\mathcal{H}$为群$\mathcal{G}$的非空子集两个条件满足其一就是子群：（1）.$\forall$$\mathcal{a，b}$$\in$$\mathcal{H}$，$\mathcal{ab}$$\in$$\mathcal{H}$且$a^{-1}$$\in$$\mathcal{H}$（2）.$\forall$$\mathcal{a，b}$$\in$$\mathcal{H}$，$\mathcal{a}$$a^{-1}$$\in$$\mathcal{H}$<br><br>陪集（伴集，傍集）：H是G的子群，a$\in$G,Ha={ha|h$\in$H}（我真的懒得复制代码了，就这样吧）这个H可以用来构造G的分划，称Ha为G的一个右伴集，同理可定义aH为G的一个左伴集。<br><br>两个右伴集相等的充要条件，若Ha=Hb $\rightarrow$ a=ea$\in$Ha $\rightarrow$ a=hb $\rightarrow$ a$b^{-1}$$\in$H，所以ha=ha（$b^{-1}$b）=（ha$b^{-1}$）b$\in$Hb,所以Ha是Hb的子集，反过来也可以证，所以Ha=Hb<br><br>基于此的，我们得到了Ha=Hb的充要条件为a$b^{-1}$$\in$H，<br>不相等时Ha和Hb的交集为空集，|Ha|=|Hb|，基于以上，我们说明了右伴集全体或左伴集全体构成了G 的一个分划<br><br>Lagrange定理<br><br>设H是有限群G的子群，则|H|是|G|的因子<br><br>Euler定理，Fermat小定理<br><br>正规子群，对于H为群G的子群，对于任意的a属于G，Ha=aH总成立，称H是G的正规子群。gh$g^{-1}$属于H推出H是G 的正规子群。中心必是正规子群<br><br>任意有限群都同构于某个置换群</p></blockquote><h2 id="环论"><a href="#环论" class="headerlink" title="环论"></a>环论</h2><blockquote><p>环中有有两种运算 加法与乘法，加法是个群，乘法是个半群</p></blockquote><ul><li>交换环，乘法可交换，就是交换环</li><li>无零因子的环叫做整环</li><li>除环<blockquote><p>设R是一个环，R^=R\0,若R^有每一元素有逆元，则称R是一个除环。可交换的除环称为域，不可交换的除环称为斜域或体</p></blockquote></li><li>子环<blockquote><p>R是一个环，S是R的子集，若S在R的加法和乘法下仍为一个环则S称为R的一个子环。。。充要条件是S中的元素在减法和乘法中保持封闭</p></blockquote></li><li>理想<blockquote><p>设$I$是环$R$的一个子集，若$I$是（R，+）的一个加法子群且对于任意的r属于R及a属于I，总有ar属于I以及ra属于I，则称I是R的一个理想或双侧理想。（可以类比于群论中正规子群的定义）<br><br>任意一个环都至少有两个理想：一个是{0}一个是R自身，这二者被称为平凡理想（类比继续类比，群论和环论像是互通的）</p></blockquote></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VSCode </tag>
             
             <tag> Markdown </tag>
             

@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="归档: 2021, 海藻">
-    <meta name="description" content="一个或摆或卷的理想主义者">
+    <meta name="keywords" content="数学分析, 海藻">
+    <meta name="description" content="还在更新中。。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>归档: 2021 | 海藻</title>
+    <title>数学分析 | 海藻</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -38,9 +38,7 @@
 
 
 
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
     <link rel="stylesheet" href="/css/post.css">
-
 
 
 
@@ -401,221 +399,514 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                海藻
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/themes/matery/source/medias/featureimages/26.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">数学分析</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
 
 
-    </div>
-</div>
-
-<main class="content">
+<main class="container content">
 
     
-    <div class="container archive-calendar">
+    <!-- 文章内容详情 -->
+<div id="artDetail">
     <div class="card">
-        <div id="post-calendar" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let myChart = echarts.init(document.getElementById('post-calendar'));
-
-    
-
-    let option = {
-        title: {
-            top: 0,
-            text: '文章日历',
-            left: 'center',
-            textStyle: {
-                color: '#3C4858'
-            }
-        },
-        tooltip: {
-            padding: 10,
-            backgroundColor: '#555',
-            borderColor: '#777',
-            borderWidth: 1,
-            formatter: function (obj) {
-                var value = obj.value;
-                return '<div style="font-size: 14px;">' + value[0] + '：' + value[1] + '</div>';
-            }
-        },
-        visualMap: {
-            show: true,
-            showLabel: true,
-            categories: [0, 1, 2, 3, 4],
-            calculable: true,
-            inRange: {
-                symbol: 'rect',
-                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
-            },
-            itemWidth: 12,
-            itemHeight: 12,
-            orient: 'horizontal',
-            left: 'center',
-            bottom: 0
-        },
-        calendar: [{
-            left: 'center',
-            range: ["2021-08-05", "2022-08-05"],
-            cellSize: [13, 13],
-            splitLine: {
-                show: false
-            },
-            itemStyle: {
-                color: '#196127',
-                borderColor: '#fff',
-                borderWidth: 2
-            },
-            yearLabel: {
-                show: false
-            },
-            monthLabel: {
-                nameMap: 'cn',
-                fontSize: 11
-            },
-            dayLabel: {
-                formatter: '{start}  1st',
-                nameMap: 'cn',
-                fontSize: 11
-            }
-        }],
-        series: [{
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 0,
-            data: [["2021-08-05", 0], ["2021-08-06", 0], ["2021-08-07", 0], ["2021-08-08", 0], ["2021-08-09", 0], ["2021-08-10", 0], ["2021-08-11", 0], ["2021-08-12", 0], ["2021-08-13", 0], ["2021-08-14", 0], ["2021-08-15", 0], ["2021-08-16", 0], ["2021-08-17", 0], ["2021-08-18", 0], ["2021-08-19", 0], ["2021-08-20", 0], ["2021-08-21", 0], ["2021-08-22", 0], ["2021-08-23", 0], ["2021-08-24", 0], ["2021-08-25", 0], ["2021-08-26", 0], ["2021-08-27", 0], ["2021-08-28", 0], ["2021-08-29", 0], ["2021-08-30", 0], ["2021-08-31", 0], ["2021-09-01", 0], ["2021-09-02", 0], ["2021-09-03", 0], ["2021-09-04", 0], ["2021-09-05", 0], ["2021-09-06", 0], ["2021-09-07", 1], ["2021-09-08", 0], ["2021-09-09", 0], ["2021-09-10", 0], ["2021-09-11", 0], ["2021-09-12", 0], ["2021-09-13", 0], ["2021-09-14", 0], ["2021-09-15", 0], ["2021-09-16", 0], ["2021-09-17", 0], ["2021-09-18", 0], ["2021-09-19", 0], ["2021-09-20", 0], ["2021-09-21", 0], ["2021-09-22", 0], ["2021-09-23", 0], ["2021-09-24", 0], ["2021-09-25", 0], ["2021-09-26", 0], ["2021-09-27", 0], ["2021-09-28", 0], ["2021-09-29", 0], ["2021-09-30", 0], ["2021-10-01", 0], ["2021-10-02", 0], ["2021-10-03", 0], ["2021-10-04", 0], ["2021-10-05", 0], ["2021-10-06", 0], ["2021-10-07", 0], ["2021-10-08", 0], ["2021-10-09", 0], ["2021-10-10", 0], ["2021-10-11", 0], ["2021-10-12", 0], ["2021-10-13", 0], ["2021-10-14", 0], ["2021-10-15", 0], ["2021-10-16", 0], ["2021-10-17", 0], ["2021-10-18", 0], ["2021-10-19", 0], ["2021-10-20", 0], ["2021-10-21", 0], ["2021-10-22", 0], ["2021-10-23", 0], ["2021-10-24", 0], ["2021-10-25", 0], ["2021-10-26", 0], ["2021-10-27", 0], ["2021-10-28", 0], ["2021-10-29", 0], ["2021-10-30", 0], ["2021-10-31", 0], ["2021-11-01", 0], ["2021-11-02", 0], ["2021-11-03", 0], ["2021-11-04", 0], ["2021-11-05", 0], ["2021-11-06", 0], ["2021-11-07", 0], ["2021-11-08", 0], ["2021-11-09", 0], ["2021-11-10", 0], ["2021-11-11", 0], ["2021-11-12", 0], ["2021-11-13", 0], ["2021-11-14", 0], ["2021-11-15", 0], ["2021-11-16", 0], ["2021-11-17", 0], ["2021-11-18", 0], ["2021-11-19", 0], ["2021-11-20", 0], ["2021-11-21", 0], ["2021-11-22", 0], ["2021-11-23", 0], ["2021-11-24", 0], ["2021-11-25", 0], ["2021-11-26", 0], ["2021-11-27", 0], ["2021-11-28", 0], ["2021-11-29", 0], ["2021-11-30", 0], ["2021-12-01", 0], ["2021-12-02", 0], ["2021-12-03", 0], ["2021-12-04", 0], ["2021-12-05", 0], ["2021-12-06", 0], ["2021-12-07", 0], ["2021-12-08", 0], ["2021-12-09", 0], ["2021-12-10", 0], ["2021-12-11", 0], ["2021-12-12", 0], ["2021-12-13", 0], ["2021-12-14", 0], ["2021-12-15", 0], ["2021-12-16", 0], ["2021-12-17", 0], ["2021-12-18", 0], ["2021-12-19", 0], ["2021-12-20", 0], ["2021-12-21", 0], ["2021-12-22", 0], ["2021-12-23", 0], ["2021-12-24", 0], ["2021-12-25", 0], ["2021-12-26", 0], ["2021-12-27", 0], ["2021-12-28", 0], ["2021-12-29", 0], ["2021-12-30", 0], ["2021-12-31", 0], ["2022-01-01", 0], ["2022-01-02", 0], ["2022-01-03", 0], ["2022-01-04", 0], ["2022-01-05", 0], ["2022-01-06", 0], ["2022-01-07", 0], ["2022-01-08", 0], ["2022-01-09", 0], ["2022-01-10", 0], ["2022-01-11", 0], ["2022-01-12", 0], ["2022-01-13", 0], ["2022-01-14", 0], ["2022-01-15", 0], ["2022-01-16", 0], ["2022-01-17", 0], ["2022-01-18", 0], ["2022-01-19", 0], ["2022-01-20", 0], ["2022-01-21", 0], ["2022-01-22", 0], ["2022-01-23", 0], ["2022-01-24", 0], ["2022-01-25", 0], ["2022-01-26", 0], ["2022-01-27", 0], ["2022-01-28", 0], ["2022-01-29", 0], ["2022-01-30", 0], ["2022-01-31", 0], ["2022-02-01", 0], ["2022-02-02", 0], ["2022-02-03", 0], ["2022-02-04", 0], ["2022-02-05", 0], ["2022-02-06", 0], ["2022-02-07", 0], ["2022-02-08", 0], ["2022-02-09", 0], ["2022-02-10", 0], ["2022-02-11", 0], ["2022-02-12", 0], ["2022-02-13", 0], ["2022-02-14", 0], ["2022-02-15", 0], ["2022-02-16", 0], ["2022-02-17", 0], ["2022-02-18", 0], ["2022-02-19", 0], ["2022-02-20", 0], ["2022-02-21", 0], ["2022-02-22", 0], ["2022-02-23", 0], ["2022-02-24", 0], ["2022-02-25", 0], ["2022-02-26", 0], ["2022-02-27", 0], ["2022-02-28", 0], ["2022-03-01", 0], ["2022-03-02", 0], ["2022-03-03", 0], ["2022-03-04", 0], ["2022-03-05", 0], ["2022-03-06", 0], ["2022-03-07", 0], ["2022-03-08", 0], ["2022-03-09", 0], ["2022-03-10", 0], ["2022-03-11", 0], ["2022-03-12", 0], ["2022-03-13", 0], ["2022-03-14", 0], ["2022-03-15", 0], ["2022-03-16", 0], ["2022-03-17", 0], ["2022-03-18", 0], ["2022-03-19", 0], ["2022-03-20", 0], ["2022-03-21", 0], ["2022-03-22", 0], ["2022-03-23", 0], ["2022-03-24", 0], ["2022-03-25", 0], ["2022-03-26", 0], ["2022-03-27", 0], ["2022-03-28", 0], ["2022-03-29", 0], ["2022-03-30", 0], ["2022-03-31", 0], ["2022-04-01", 0], ["2022-04-02", 0], ["2022-04-03", 0], ["2022-04-04", 0], ["2022-04-05", 0], ["2022-04-06", 0], ["2022-04-07", 0], ["2022-04-08", 0], ["2022-04-09", 0], ["2022-04-10", 0], ["2022-04-11", 0], ["2022-04-12", 0], ["2022-04-13", 0], ["2022-04-14", 0], ["2022-04-15", 0], ["2022-04-16", 0], ["2022-04-17", 0], ["2022-04-18", 0], ["2022-04-19", 0], ["2022-04-20", 0], ["2022-04-21", 0], ["2022-04-22", 0], ["2022-04-23", 0], ["2022-04-24", 0], ["2022-04-25", 0], ["2022-04-26", 0], ["2022-04-27", 0], ["2022-04-28", 0], ["2022-04-29", 0], ["2022-04-30", 0], ["2022-05-01", 0], ["2022-05-02", 0], ["2022-05-03", 0], ["2022-05-04", 0], ["2022-05-05", 0], ["2022-05-06", 0], ["2022-05-07", 0], ["2022-05-08", 0], ["2022-05-09", 0], ["2022-05-10", 0], ["2022-05-11", 0], ["2022-05-12", 0], ["2022-05-13", 0], ["2022-05-14", 0], ["2022-05-15", 0], ["2022-05-16", 0], ["2022-05-17", 0], ["2022-05-18", 0], ["2022-05-19", 0], ["2022-05-20", 0], ["2022-05-21", 0], ["2022-05-22", 0], ["2022-05-23", 0], ["2022-05-24", 0], ["2022-05-25", 0], ["2022-05-26", 0], ["2022-05-27", 0], ["2022-05-28", 0], ["2022-05-29", 0], ["2022-05-30", 0], ["2022-05-31", 0], ["2022-06-01", 0], ["2022-06-02", 0], ["2022-06-03", 0], ["2022-06-04", 0], ["2022-06-05", 0], ["2022-06-06", 0], ["2022-06-07", 0], ["2022-06-08", 0], ["2022-06-09", 0], ["2022-06-10", 0], ["2022-06-11", 0], ["2022-06-12", 0], ["2022-06-13", 0], ["2022-06-14", 0], ["2022-06-15", 0], ["2022-06-16", 0], ["2022-06-17", 0], ["2022-06-18", 0], ["2022-06-19", 0], ["2022-06-20", 0], ["2022-06-21", 0], ["2022-06-22", 0], ["2022-06-23", 0], ["2022-06-24", 0], ["2022-06-25", 0], ["2022-06-26", 0], ["2022-06-27", 0], ["2022-06-28", 0], ["2022-06-29", 0], ["2022-06-30", 0], ["2022-07-01", 0], ["2022-07-02", 0], ["2022-07-03", 0], ["2022-07-04", 0], ["2022-07-05", 0], ["2022-07-06", 0], ["2022-07-07", 0], ["2022-07-08", 0], ["2022-07-09", 0], ["2022-07-10", 0], ["2022-07-11", 0], ["2022-07-12", 0], ["2022-07-13", 0], ["2022-07-14", 0], ["2022-07-15", 0], ["2022-07-16", 0], ["2022-07-17", 0], ["2022-07-18", 0], ["2022-07-19", 0], ["2022-07-20", 0], ["2022-07-21", 0], ["2022-07-22", 0], ["2022-07-23", 0], ["2022-07-24", 0], ["2022-07-25", 0], ["2022-07-26", 0], ["2022-07-27", 0], ["2022-07-28", 0], ["2022-07-29", 0], ["2022-07-30", 0], ["2022-07-31", 0], ["2022-08-01", 0], ["2022-08-02", 0], ["2022-08-03", 0], ["2022-08-04", 1], ["2022-08-05", 0]]
-        }]
-
-    };
-
-    myChart.setOption(option);
-</script>
-
-    
-
-    
-
-    <div id="cd-timeline" class="container">
-        
-        <div class="cd-timeline-block">
-
-            
-            
-            
-            <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/archives/2021">2021</a>
-            </div>
-            
-
-            
-            
-            
-            <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/archives/2021/09">09</a>
-            </div>
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>07</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2021/09/07/hello-world/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
-                                
-                                <span class="card-title">typora-vue-theme主题介绍</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    这是一个测试
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
                         
-                        <div class="card-action article-tags">
-                            
-                            <a href="/tags/Typora/"><span class="chip bg-color">Typora</span></a>
-                            
-                            <a href="/tags/Markdown/"><span class="chip bg-color">Markdown</span></a>
-                            
-                        </div>
+                            <a href="/tags/VSCode/">
+                                <span class="chip bg-color">VSCode</span>
+                            </a>
+                        
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
                         
                     </div>
+                    
                 </div>
-            </article>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Markdown/" class="post-category">
+                                Markdown
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-08-05
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    6 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="数学分析"><a href="#数学分析" class="headerlink" title="数学分析"></a>数学分析</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
+<li>参考教材</li>
+</ul>
+<h2 id="实数完备性"><a href="#实数完备性" class="headerlink" title="实数完备性"></a>实数完备性</h2><ul>
+<li><p>确界原理</p>
+<blockquote>
+<p>设S为一个非空数集，S有界一定有上下确界。当然有上界一定有上确界，有下界一定有下确界</p>
+</blockquote>
+</li>
+<li><p>单调有界定理</p>
+<blockquote>
+<p>一个数列，如果单调并且有界，一定有极限（另外的，如果一个数列有界，那他一定存在一个收敛的子列…这个被叫做致密性定理</p>
+</blockquote>
+</li>
+<li><p>有限覆盖原理</p>
+<blockquote>
+<p>设H为闭区间[a,b]上的一个开覆盖，则从H中可选出有限个开区间来覆盖[a，b]</p>
+</blockquote>
+</li>
+<li><p>bolazano weistress聚点定理</p>
+<blockquote>
+<p>实轴上的任一无限点集S至少有一个聚点</p>
+</blockquote>
+</li>
+<li><p>区间套定理</p>
+<blockquote>
+<p>有唯一的一点处在闭区间套[an，bn]中</p>
+</blockquote>
+</li>
+<li><p>柯西收敛原理</p>
+<blockquote>
+<p>这样的$a_{n}$叫做基本列，<br><br> | $a_{n}$-$a_{m}$|&lt;$\epsilon$<br><br>下面这个是级数收敛的充要条件不要弄混了~<br><br> | $a_{n+1}$ + $a_{n+2}$ + … + $a_{n+p}$ |&lt;$\epsilon$</p>
+</blockquote>
+</li>
+<li><p>Dedekind分割</p>
+<blockquote>
+<p>有个下组$x^{2}$&lt;2且x&lt;0，上组与下组间存在一个空隙里面有一个点就叫做无理数鸟。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="一致连续"><a href="#一致连续" class="headerlink" title="一致连续"></a>一致连续</h2><blockquote>
+<p>或许可以与一致收敛配合着来看<br><br>先说说一致连续，对于定义域内$x_{1}$ ， $x_{2}$，$\forall$$\epsilon$&gt;0,$\exists$$\delta$&gt;0,s.t|$x_{1}$ - $x_{2}$|&lt;$\delta$时，有|f（$x_{1}$）-f（$x_{2}$）|&lt;$\epsilon$<br><br>一致连续可推出连续，连续推不出一致连续<br><br>闭区间上连续可推出在此闭区间上一致连续<br><br>有界闭区间上的连续函数必在该区间上有界<br><br>个人认为：一致连续的本质规定应该是在函数的有界性这儿，和导数的有界性所关联性应该不大</p>
+</blockquote>
+<h2 id="一致收敛"><a href="#一致收敛" class="headerlink" title="一致收敛"></a>一致收敛</h2><blockquote>
+<p>对于一个函数项级数$S_{n}（x）$<br><br> 先考虑一下逐点收敛 这是先规定了x,再让n取极限是的极限存在<br><br>再考虑一致收敛，$\exists$N,$\forall$n&gt;N,s.t函数项级数收敛到S（x）这是对于所有的x而言，强度较一致收敛更强了</p>
+</blockquote>
+<ul>
+<li>这儿也是有Cauthy收敛原理的，真牛逼啊柯西</li>
+<li>具体定义<blockquote>
+<p>设函数列{${f_{n}}$}在点集$I$（可以是区间也可以不是区间）上收敛于$f$.如果对于任意给定的正数$\epsilon$,都存在与$x$无关的正整数$N$$(\epsilon)$,使得当$n$$\geqslant$$N$$(\epsilon)$时，不等式<br><br> | $f_{n}$$(x)$ - $f(x)$) |$\leq$$\epsilon$<br><br>对$I$中一切的$x$都成立，则称函数列{$f_{n}$}在$I$上一致收敛于函数$f$.</p>
+</blockquote>
+</li>
+<li>一个充分必要条件<blockquote>
+<p>$\lim_{n \to \infty}$$\beta_{n}$ = $\lim_{n \to \infty}$$\sup$ | $f_{n}(x)$ - $f(x)$ | = $0$</p>
+</blockquote>
+</li>
+<li>定义<blockquote>
+<p>设$\sum_{n = 1}^{\infty}u_{n}(x)$是定义在区间I上的一个函数项级数，令$S_{n}(x)$ $= \sum_{k = 1}^{n}u_{k}(x)$为他的部分和.如果函数列${S_{n}(x)}$在$I$上一致收敛于$S(x)$，则称级数$\sum_{n = 1}^{\infty}u_{n}(x)$在$I$上一致收敛于$S(x)$</p>
+</blockquote>
+</li>
+<li>必要条件为他的通项一致收敛于0</li>
+<li>$Weierstrass$判别法</li>
+<li>一致有界(小于$M$)，逐点有界（小于$M(x)$ ）</li>
+</ul>
+<h2 id="级数中的一些"><a href="#级数中的一些" class="headerlink" title="级数中的一些"></a>级数中的一些</h2><ul>
+<li>Abel分部求和公式<blockquote>
+<p>设{$a_{n}$},{$b_{n}$}是两列实数，则对任意的正整数n，有<br><br>$\enspace$ $\sum_{k = 1}^{n}$$a_{k}$$b_{k}$ = $\sum_{k = 1}^{n-1}$$S_{k}$($b_{k}$ - $b_{k+1}$) + $S_{n}$$b_{n}$,<br><br>其中$S_{k}$ = $\sum_{l = 1}^{k}$$a_{l}$.<br><br>同分部积分公式相似</p>
+</blockquote>
+</li>
+<li>Abel引理<blockquote>
+<p>设$b_{n}$单调，记$S_{k}$ = $\sum_{l = 1}^{k}$$a_{l}$.若|$S_{k}$|$\leq$$M$.那么<br><br>|$\sum_{k = 1}^{n}$$a_{k}$$b_{k}$|$\leq$$M$（|$b_{1}$|+2|$b_{n}$|）</p>
+</blockquote>
+</li>
+<li>$Dirichlet$判别法(收敛和一致收敛有着奇特的相似性)</li>
+<li>$Abel$判别法(收敛和一致收敛有着奇特的相似性)</li>
+<li>绝对收敛与条件收敛<blockquote>
+<p>绝对收敛较为一般，交换次序不变和。（Riemann定理）条件收敛交换次序可以变成任意数</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="浅谈积分"><a href="#浅谈积分" class="headerlink" title="浅谈积分"></a>浅谈积分</h2><blockquote>
+<p>Rieman积分 Lebesgue积分（可测函数的积分）NL公式<br><br>可积一定有界<br><br>积分第一均值定理 积分第二均值定理<br><br>微积分基本定理<br><br>Darboux定理 ：上和，下和，上和的下确界叫做上积分，下和的上确界叫做下积分，分割长度趋于0的时候 上和等于上积分，下和等于下积分<br>个人感觉就是极限的另一种形式</p>
+</blockquote>
+<ul>
+<li>有了一个三个条件的等价，可积；振幅的极限和为0；上积分等于下积分</li>
+<li>f在有限闭区间上有界，那么f在其上Riemann可积的充分必要条件是不连续点是一个零测集</li>
+</ul>
+<h2 id="多元积分学"><a href="#多元积分学" class="headerlink" title="多元积分学"></a>多元积分学</h2><ul>
+<li>内点<blockquote>
+<p>一个小的邻域球在球内部，就是内点</p>
+</blockquote>
+</li>
+<li>开集<blockquote>
+<p>内点组成的集合与本身相等就是开集，$R^{n}$，$\varnothing$是空集，任意多个开集的并是开集，有限个开集的交是开集（这里可以参考闭区间套定理，让无限个的开集交起来就有可能是一个点了）</p>
+</blockquote>
+</li>
+<li>闭集<blockquote>
+<p>补集是开集的就是闭集</p>
+</blockquote>
+</li>
+<li>凝聚点<blockquote>
+<p>一个以$\mathcal{a}$为中心的空心球，若其内总存在E中的点，就称$\mathcal{a}$为凝聚点或极限点，注：凝聚点不一定属于E，在边缘就不是。不是凝聚点的点叫做孤立点<br><br>凝聚点的全体叫做导集记作$E^{‘}$，闭包是导集与原集合的并（写作E的共轭敲不出来算了），E是闭集的充分必要条件是导集是E的子集，也就是闭包和E相等。还有一个充分必要条件就是说E中任意收敛点列的极限必在E中</p>
+</blockquote>
+</li>
+<li>如果E中的任一点列都有一子列收敛于E中的一点，则称E为$R^{n}$中的一个列紧集，实际上讲就是有界闭集</li>
+<li>利用开覆盖来定义一个紧致集</li>
+<li>连通集<blockquote>
+<p>对于一个E进行一个AUB的分解，他俩相交等于空集，同时$A^{‘}$$\bigcap$$B^{}$$\neq$$\varnothing$且$A^{}$$\bigcap$$B^{‘}$$\neq$$\varnothing$，那就称E为一个连通集，或说E是连通的</p>
+</blockquote>
+</li>
+<li>类似于一元的，这里也有相似的一致连续</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">ZHhhh</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://nnnn0907.github.io/2022/08/05/shu-xue-fen-xi/">http://nnnn0907.github.io/2022/08/05/shu-xue-fen-xi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">ZHhhh</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/VSCode/">
+                                    <span class="chip bg-color">VSCode</span>
+                                </a>
+                            
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/08/05/shu-xue-fen-xi/">
+                    <div class="card-image">
+                        
+                        <img src="/themes/matery/source/medias/featureimages/26.jpg" class="responsive-img" alt="数学分析">
+                        
+                        <span class="card-title">数学分析</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            还在更新中。。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/VSCode/">
+                        <span class="chip bg-color">VSCode</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/05/ji-zhi-zu-he-shu-qi-ke-cheng-jie-ke-lun-wen/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="极值组合暑期课程结课论文">
+                        
+                        <span class="card-title">极值组合暑期课程结课论文</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            还没动笔写。。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/VSCode/">
+                        <span class="chip bg-color">VSCode</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
         </div>
         
     </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 
@@ -685,7 +976,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">73</span>
+                        class="white-color">3k</span>
             
             
             
